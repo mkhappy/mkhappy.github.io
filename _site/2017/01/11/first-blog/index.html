@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Hello Github Pages</title>
+    <meta name="description" content="第一篇文章。">
+
+    <link rel="shortcut icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="icon" href="/favicon.ico?" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.bootcss.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://at.alicdn.com/t/font_8v3czwksspqlg14i.css">
+    <link rel="stylesheet" href="/css/main.css ">
+    <link rel="canonical" href="http://10.1.1.157:8002/2017/01/11/first-blog/">
+    <link rel="alternate" type="application/rss+xml" title="Boban's blog" href="http://10.1.1.157:8002/feed.xml ">
+
+
+    <script>
+    // 百度统计代码
+    var _hmt = _hmt || [];
+    (function() {
+      var hm = document.createElement("script");
+      hm.src = "//hm.baidu.com/hm.js?13d3b633b10071f50f3c37be28910c06";
+      var s = document.getElementsByTagName("script")[0];
+      s.parentNode.insertBefore(hm, s);
+    })();
+    </script>
+
+
+</head>
+
+
+  <body>
+
+    <header id="top">
+    <div class="wrapper">
+        <a href="/" class="brand">Boban's blog</a>
+        <small>SA Engineer</small>
+        <button id="headerMenu" class="menu"><i class="fa fa-bars"></i></button>
+        <nav id="headerNav">
+            <ul>
+                <li>
+                    
+                    <a href="/">
+                    
+                        <i class="fa fa-home"></i>Home
+                    </a>
+                </li>
+
+                
+                    
+                    <li>
+                        
+                        <a href="/archive/">
+                        
+                            <i class="fa fa-archive"></i>Archives
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/category/">
+                        
+                            <i class="fa fa-th-list"></i>Categories
+                        </a>
+                    </li>
+                    
+                
+                    
+                    <li>
+                        
+                        <a href="/tag/">
+                        
+                            <i class="fa fa-tags"></i>Tags
+                        </a>
+                    </li>
+                    
+                
+                    
+                
+                    
+                
+                    
+                
+            </ul>
+        </nav>
+    </div>
+</header>
+
+
+        <div class="page clearfix" post>
+    <div class="left">
+        <h1>Hello Github Pages</h1>
+        <div class="label">
+
+            <div class="label-card">
+                <i class="fa fa-calendar"></i>2017-01-11
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+                
+            </div>
+
+            <div class="label-card">
+            
+
+
+<!-- <span class="point">•</span> -->
+<span class="categories">
+  <i class="fa fa-th-list"></i>
+  
+    
+        <a href="/category/#talk" title="Category: talk" rel="category">talk</a>
+    
+  
+
+  <!-- <span class="point">•</span> -->
+</span>
+
+
+            </div>
+
+            <div class="label-card">
+            
+<!-- <span class="point">•</span> -->
+<span class="pageTag">
+  <i class="fa fa-tags"></i>
+  
+    
+        <!--a href="/tag/#talk" title="Tag: talk" rel="tag">talk</a-->
+        <a href="/tag/#talk" title="Tag: talk" rel="tag">talk</a>
+    
+  
+
+</span>
+
+            </div>
+
+        </div>
+        <hr>
+        <article itemscope itemtype="http://schema.org/BlogPosting">
+        <p>Hello ! 随便写写，主要想记录一下<code class="highlighter-rouge">python</code>, <code class="highlighter-rouge">javascript</code>, <code class="highlighter-rouge">java</code> 等等it技术相关的文章。偶尔会发一些其他类的文章。</p>
+
+<h4 id="下面随便贴点代码">下面随便贴点代码</h4>
+
+<div class="language-python highlighter-rouge"><pre class="highlight"><code><span class="c">#!/usr/bin/env python</span>
+<span class="c"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">os</span>
+<span class="kn">import</span> <span class="nn">time</span>
+
+<span class="k">def</span> <span class="nf">check</span><span class="p">():</span>
+    <span class="n">p</span> <span class="o">=</span> <span class="mi">0</span>
+    <span class="k">while</span> <span class="bp">True</span><span class="p">:</span>
+        <span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"log.txt"</span><span class="p">,</span> <span class="s">"r+"</span><span class="p">)</span>
+        <span class="n">f1</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s">"result.txt"</span><span class="p">,</span> <span class="s">"a+"</span><span class="p">)</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">seek</span><span class="p">(</span><span class="n">p</span><span class="p">,</span> <span class="mi">0</span><span class="p">)</span>
+        
+        <span class="c">#readlines()方法</span>
+        <span class="n">filelist</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">readlines</span><span class="p">()</span>
+        <span class="k">if</span> <span class="n">filelist</span><span class="p">:</span>
+            <span class="k">for</span> <span class="n">line</span> <span class="ow">in</span> <span class="n">filelist</span><span class="p">:</span>
+                <span class="c">#对行内容进行操作</span>
+                <span class="n">f1</span><span class="o">.</span><span class="n">write</span><span class="p">(</span><span class="n">line</span><span class="p">)</span>
+
+        <span class="c">#获取当前位置，为下次while循环做偏移</span>
+        <span class="n">p</span> <span class="o">=</span> <span class="n">f</span><span class="o">.</span><span class="n">tell</span><span class="p">()</span>
+        <span class="k">print</span> <span class="s">'now p '</span><span class="p">,</span> <span class="n">p</span>
+        <span class="n">f</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">f1</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
+        <span class="n">time</span><span class="o">.</span><span class="n">sleep</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="k">if</span> <span class="n">__name__</span> <span class="o">==</span> <span class="s">'__main__'</span><span class="p">:</span>
+    <span class="n">check</span><span class="p">()</span>
+
+
+</code></pre>
+</div>
+
+<h4 id="再来一段">再来一段</h4>
+
+<div class="language-java highlighter-rouge"><pre class="highlight"><code>    
+<span class="kn">import</span> <span class="nn">java.util.ArrayList</span><span class="o">;</span>  
+<span class="kn">import</span> <span class="nn">java.util.Arrays</span><span class="o">;</span>  
+<span class="kn">import</span> <span class="nn">java.util.Collections</span><span class="o">;</span>  
+<span class="kn">import</span> <span class="nn">java.util.Comparator</span><span class="o">;</span>  
+<span class="kn">import</span> <span class="nn">java.util.HashMap</span><span class="o">;</span>  
+<span class="kn">import</span> <span class="nn">java.util.List</span><span class="o">;</span>  
+<span class="kn">import</span> <span class="nn">java.util.Map</span><span class="o">;</span>  
+<span class="kn">import</span> <span class="nn">java.util.Map.Entry</span><span class="o">;</span>  
+  
+ <span class="kd">public</span> <span class="kd">class</span> <span class="nc">SortSomeThing</span><span class="o">{</span>
+     <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">){</span> 
+         <span class="n">Map</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Long</span><span class="o">&gt;</span> <span class="n">map</span> <span class="o">=</span> <span class="k">new</span> <span class="n">HashMap</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Long</span><span class="o">&gt;();</span>  
+         <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"c"</span><span class="o">,</span> <span class="mi">33333L</span><span class="o">);</span>  
+         <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"a"</span><span class="o">,</span> <span class="mi">11111L</span><span class="o">);</span>  
+         <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"d"</span><span class="o">,</span> <span class="mi">44444L</span><span class="o">);</span>  
+         <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"e"</span><span class="o">,</span> <span class="mi">55555L</span><span class="o">);</span>  
+         <span class="n">map</span><span class="o">.</span><span class="na">put</span><span class="o">(</span><span class="s">"b"</span><span class="o">,</span> <span class="mi">22222L</span><span class="o">);</span>  
+           
+         <span class="c1">//将map.entrySet()转换成list  </span>
+         <span class="n">List</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">.</span><span class="na">Entry</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Long</span><span class="o">&gt;&gt;</span> <span class="n">list</span> <span class="o">=</span> <span class="k">new</span> <span class="n">ArrayList</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">.</span><span class="na">Entry</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Long</span><span class="o">&gt;&gt;(</span><span class="n">map</span><span class="o">.</span><span class="na">entrySet</span><span class="o">());</span>  
+         <span class="n">Collections</span><span class="o">.</span><span class="na">sort</span><span class="o">(</span><span class="n">list</span><span class="o">,</span> <span class="k">new</span> <span class="n">Comparator</span><span class="o">&lt;</span><span class="n">Map</span><span class="o">.</span><span class="na">Entry</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Long</span><span class="o">&gt;&gt;()</span> <span class="o">{</span>  
+             <span class="c1">//降序排序  </span>
+             <span class="nd">@Override</span>  
+             <span class="kd">public</span> <span class="kt">int</span> <span class="nf">compare</span><span class="o">(</span><span class="n">Entry</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Long</span><span class="o">&gt;</span> <span class="n">o1</span><span class="o">,</span> <span class="n">Entry</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Long</span><span class="o">&gt;</span> <span class="n">o2</span><span class="o">)</span> <span class="o">{</span>  
+                 <span class="c1">//return o1.getValue().compareTo(o2.getValue());  </span>
+                 <span class="k">return</span> <span class="n">o2</span><span class="o">.</span><span class="na">getValue</span><span class="o">().</span><span class="na">compareTo</span><span class="o">(</span><span class="n">o1</span><span class="o">.</span><span class="na">getValue</span><span class="o">());</span>  
+             <span class="o">}</span>  
+         <span class="o">});</span>  
+   
+         <span class="k">for</span> <span class="o">(</span><span class="n">Map</span><span class="o">.</span><span class="na">Entry</span><span class="o">&lt;</span><span class="n">String</span><span class="o">,</span> <span class="n">Long</span><span class="o">&gt;</span> <span class="n">mapping</span> <span class="o">:</span> <span class="n">list</span><span class="o">)</span> <span class="o">{</span>  
+             <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="n">mapping</span><span class="o">.</span><span class="na">getKey</span><span class="o">()</span> <span class="o">+</span> <span class="s">":"</span> <span class="o">+</span> <span class="n">mapping</span><span class="o">.</span><span class="na">getValue</span><span class="o">());</span>  
+         <span class="o">}</span>
+     <span class="o">}</span>
+ <span class="o">}</span> 
+
+
+</code></pre>
+</div>
+
+        </article>
+        <hr>
+
+        
+        
+        
+
+        <div class="post-recent">
+    <div class="pre">
+        
+    </div>
+    <div class="nex">
+
+        
+    </div>
+</div>
+
+
+        <h2 id="comments">Comments</h2>
+        
+
+
+
+
+
+    </div>
+    <button class="anchor"><i class="fa fa-anchor"></i></button>
+    <div class="right">
+        <div class="wrap">
+
+            <!-- Content -->
+            <div class="side content">
+                <div>
+                    Content
+                </div>
+                <ul id="content-side" class="content-ul">
+                    <li><a href="#similar_posts">Similar Posts</a></li>
+                    <li><a href="#comments">Comments</a></li>
+                </ul>
+            </div>
+            <!-- 其他div框放到这里 -->
+            <!-- <div class="side">bbbb</div> -->
+        </div>
+    </div>
+</div>
+<script>
+/**
+ * target _blank
+ */
+(function() {
+    var aTags = document.querySelectorAll('article a:not([id])')
+    for (var i = 0; i < aTags.length; i++) {
+        aTags[i].setAttribute('target', '_blank')
+    }
+}());
+</script>
+<script src="/js/pageContent.js " charset="utf-8"></script>
+
+
+    <footer class="site-footer">
+
+
+    <div class="wrapper">
+
+        <p class="description">
+           /*  好记性不如烂BLOG!  */
+        </p>
+        <p class="contact">
+                 联系我: 
+            <a href="https://github.com/mkhappy" title="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a>  
+            <a href="mailto:boban@taomee.com" title="email"><i class="fa fa-envelope-o" aria-hidden="true"></i></a>        
+        </p>
+        <p>
+            本站总访问量<span id="busuanzi_value_site_pv"></span>次，本站访客数<span id="busuanzi_value_site_uv"></span>人次，本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        </p>
+        <p class="power">
+            <span>
+                Site powered by <a href="https://jekyllrb.com/">Jekyll</a> & <a href="https://pages.github.com/">Github Pages</a>.
+            </span>
+            <span>
+                Theme designed by <a href="https://github.com/Gaohaoyang">HyG</a>.
+            </span>
+        </p>
+    </div>
+</footer>
+<script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+    <div class="back-to-top">
+    <a href="#top" class="scroll">
+        <i class="fa fa-arrow-up" aria-hidden="true"></i>
+    </a>
+</div>
+
+    <script src=" /js/main.js " charset="utf-8"></script>
+    <script src=" /js/scroll.min.js " charset="utf-8"></script>
+  </body>
+
+</html>

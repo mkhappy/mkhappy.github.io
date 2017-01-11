@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Boban's blog</title>
+    <description></description>
+    <link>http://10.1.1.157:8002/</link>
+    <atom:link href="http://10.1.1.157:8002/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Wed, 11 Jan 2017 18:24:08 +0800</pubDate>
+    <lastBuildDate>Wed, 11 Jan 2017 18:24:08 +0800</lastBuildDate>
+    <generator>Jekyll v3.3.1</generator>
+    
+      <item>
+        <title>Hello Github Pages</title>
+        <description>第一篇文章。</description>
+        <pubDate>Wed, 11 Jan 2017 00:00:00 +0800</pubDate>
+        <link>http://10.1.1.157:8002/2017/01/11/first-blog/</link>
+        <guid isPermaLink="true">http://10.1.1.157:8002/2017/01/11/first-blog/</guid>
+        
+        <category>talk</category>
+        
+        
+        <category>talk</category>
+        
+      </item>
+    
+  </channel>
+</rss>
